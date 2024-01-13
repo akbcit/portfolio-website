@@ -1,0 +1,63 @@
+#about-me-container{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; 
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#about-me-container h1{
+    font-size: 43px;
+}
+
+#separator{
+    height: 0.4rem;
+    width: 2rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    background: rgb(83, 115, 154); 
+}
+
+#about-me-para{
+   text-align: center;
+   font-size: 25px;
+}
+
+#skills-slider{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide 20s linear infinite;
+    box-shadow: inset;
+    z-index: 1;
+}
+
+.skillBadge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.skill-logo{
+    height: 50px;
+    margin: 0;
+}
+
+.skill-name{
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    color:rgb(83, 115, 154)
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(100% / 3)); }
+}

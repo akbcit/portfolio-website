@@ -1,0 +1,40 @@
+#scroll-prompt{
+    height: 3.4rem;
+    width: 2.1rem;
+    border: 3px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-top: 70px;
+}
+
+#square{
+    width: 4px;        
+    height: 5px;       
+    background-color: #000000;
+    position: absolute;
+    top: 7px;
+    animation: scroll 1.3s linear infinite;
+}
+
+@keyframes scroll {
+    0%, 100% {
+        top: 7px;
+        background-color: #000000;
+    }
+    25% {
+        top: 14px;
+        background-color: #525151;
+    }
+    50% {
+        top: 21px;
+        background-color: #969696;
+    }
+    75% {
+        top: 28px;
+        background-color: #d4d4d4;
+    }
+}

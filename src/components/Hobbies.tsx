@@ -1,18 +1,18 @@
 import "../styles/Hobbies.css";
 
-interface Hobby {
-    hobbyName: string;
-    imgSrc?: string;
-}
+// interface Hobby {
+//     hobbyName: string;
+//     imgSrc?: string;
+// }
 
 function Hobbies() {
 
-    const hobbiesArray: Array<Hobby> = [
-        {
-            hobbyName: "Hobby",
-            imgSrc: "",
-        },
-    ]
+    // const hobbiesArray: Array<Hobby> = [
+    //     {
+    //         hobbyName: "Hobby",
+    //         imgSrc: "",
+    //     },
+    // ]
 
     return (
         <div id="hobbies-container">

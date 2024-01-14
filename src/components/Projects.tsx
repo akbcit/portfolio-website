@@ -1,22 +1,22 @@
 import "../styles/Projects.css";
 
-interface Project {
-    projectName: string;
-    imgSrc?: string;
-    projectLink?: string;
-    gitLink?: string;
-}
+// interface Project {
+//     projectName: string;
+//     imgSrc?: string;
+//     projectLink?: string;
+//     gitLink?: string;
+// }
 
 function Projects() {
 
-    const projectsArray: Array<Project> = [
-        {
-            projectName: "Snapimals",
-            imgSrc: "",
-            projectLink: "",
-            gitLink: "",
-        },
-    ]
+    // const projectsArray: Array<Project> = [
+    //     {
+    //         projectName: "Snapimals",
+    //         imgSrc: "",
+    //         projectLink: "",
+    //         gitLink: "",
+    //     },
+    // ]
 
     return (
         <div id="projects-container">

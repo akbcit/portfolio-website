@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../styles/Hamburger.css";
 import { NavLink } from "react-router-dom";
 
+interface Link {
+    url: string;
+    title: string;
+}
 
-function Hamburger({ links }) {
+function Hamburger({ links }: { links: Link[] }) {
 
     const [menuState, setMenuState] = useState<string>("hidden");
     const [barsConfig, setBarsConfig] = useState<string>("parallel");

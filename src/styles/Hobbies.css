@@ -1,5 +1,6 @@
 #hobbies-container {
-  margin-top: 140px;
+  padding-top: 150px;  
+  margin-top: -150px;
   display: flex;
   flex-direction: column;
   align-items: center;

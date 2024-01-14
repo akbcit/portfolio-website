@@ -4,6 +4,7 @@
 
 #about,#projects,#hobbies{
     max-width:100%;
+    min-height: 100vh;
 }
 
 .fade-in {

@@ -7,6 +7,7 @@ import ScrollPrompt from "../components/ScrollPrompt";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Hobbies from "../components/Hobbies";
+import Footer from "../components/Footer";
 
 function PageHome() {
     const location = useLocation();
@@ -40,9 +41,9 @@ function PageHome() {
             <div id="hobbies">
                 <Hobbies />
             </div>
+            <Footer/>
         </main>
     )
-
 }
 
 export default PageHome;

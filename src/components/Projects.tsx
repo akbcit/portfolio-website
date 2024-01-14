@@ -23,7 +23,7 @@ function Projects() {
             <h1 id="projects-heading">Projects</h1>
             <div id="separator"></div>
             <p id="projects-para">Here are some of my favourite Projects</p>
-            <div id="projects-box">
+            <div id="projects-box" className="box">
                 <h1>Coming Soon!</h1>
             </div>
         </div>

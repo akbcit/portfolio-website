@@ -1,0 +1,40 @@
+@keyframes drawText {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillText {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: url(#gradient);
+  }
+}
+
+@keyframes reverseDrawText {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.text-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawText 2s forwards, 
+             fillText 1s 1s ease-in-out,
+             reverseDrawText 2s 2.1s forwards; 
+  stroke: rgb(0, 0, 0);
+  stroke-width: 2;
+  fill: transparent;
+}
+
+#Layer_1 {
+  position: fixed;  
+  height: 7rem;
+  left: 50%;  
+  top: 50%;  
+  transform: translate(-50%, -50%);  
+  z-index: 10;  
+}

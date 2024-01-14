@@ -19,7 +19,7 @@ function Hobbies() {
             <h1 id="hobbies-heading">Hobbies</h1>
             <div id="separator"></div>
             <p id="hobbies-para">In addition to developing applications, here are some activities I love doing in my leisure time!</p>
-            <div id="hobbies-box">
+            <div id="hobbies-box" className="box">
                 <h1>Coming Soon!</h1>
             </div>
         </div>

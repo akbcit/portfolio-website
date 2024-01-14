@@ -9,10 +9,11 @@
     align-items: center;
     position: relative;
     margin-top: 70px;
+    z-index: -1;
 }
 
 #square{
-    width: 4px;        
+    width: 5px;        
     height: 5px;       
     background-color: #000000;
     position: absolute;

@@ -27,7 +27,7 @@ function PageHome() {
     }, [location]);
 
     return (
-        <main>
+        <main id="page-home">
             <Header />
             <Intro />
             <ScrollPrompt />

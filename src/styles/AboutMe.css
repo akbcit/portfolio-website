@@ -1,63 +1,106 @@
-#about-me-container{
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%; 
-    overflow: hidden;
-    margin-bottom: 50px;
+#about-me-container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+  max-width: 80vw;
 }
 
-#about-me-container h1{
-    font-size: 43px;
+#about-me-container h1 {
+  font-size: 43px;
 }
 
-#separator{
-    height: 0.4rem;
-    width: 2rem;
-    border-radius: 2rem;
-    margin: 1rem;
-    background: rgb(83, 115, 154); 
+#separator {
+  height: 0.4rem;
+  width: 2rem;
+  border-radius: 2rem;
+  margin: 1rem;
+  background: rgb(83, 115, 154);
 }
 
-#about-me-para{
-   text-align: center;
-   font-size: 25px;
+#about-me-para {
+  text-align: center;
+  font-size: 25px;
 }
 
-#skills-slider{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    gap:30px;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: slide 20s linear infinite;
-    box-shadow: inset;
-    z-index: 1;
+#slider-container{
+    z-index: -1;
 }
 
-.skillBadge{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 auto;
+#skills-slider {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+  box-shadow: inset;
+  
 }
 
-.skill-logo{
-    height: 50px;
-    margin: 0;
+.skillBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  z-index: -1;
+
 }
 
-.skill-name{
-    margin: 0;
-    text-align: center;
-    font-weight: 500;
-    color:rgb(83, 115, 154)
+.skill-logo {
+  height: 50px;
+  margin: 0;
+}
+
+.skill-name {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(83, 115, 154);
 }
 
 @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(100% / 3)); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% / 3));
+  }
+}
+
+/* Media Query for narrower devices */
+@media (max-width: 600px) {
+  #about-me-container h1 {
+    font-size: 43px;
+  }
+  #about-me-para {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1160px) {
+    #about-me-container h1 {
+      font-size: 43px;
+    }
+    #about-me-para {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+  
+
+@media (max-width: 1430px) {
+  #about-me-container h1 {
+    font-size: 43px;
+  }
+  #about-me-para {
+    text-align: center;
+    font-size: 22px;
+  }
 }

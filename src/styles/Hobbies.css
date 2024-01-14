@@ -4,6 +4,8 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 250px;
+    max-width: 80vw;
+    overflow: hidden;
 }
 
 #hobbies-container h1{

@@ -1,0 +1,66 @@
+/* Utility class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #333;
+}
+
+#bar-1.cross {
+  transform: translateY(4.1px) rotate(45deg);
+}
+
+#bar-2.cross {
+  display: none;
+}
+
+#bar-3.cross {
+  transform: translateY(-4.1px) rotate(135deg);
+}
+
+#mobile-menu {
+  top: 6rem;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#mobile-menu-list {
+  position: fixed;
+  top: 30%;
+  left: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
